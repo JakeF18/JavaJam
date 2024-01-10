@@ -4,19 +4,23 @@ body { background-color: #FCEBB6;
           background-image: url(fadedroad50.jpg);
           background-repeat: no-repeat;
 }
-#wrapper { background-color: #FEFAEB;
+#wrapper { background-color: #231814;
            margin-left: auto;
            margin-right: auto;
            width: 80%;
            min-width: 900px;
            max-width: 1280px;
            box-shadow: 3px 3px 3px #676767;
+           padding: 0;
 }   
 header { background-color: #D2B48C; 
-         color: #8C3826; 
-		 text-align: center; 
+         color:  #231814;  
                padding-top: 5px;
                padding-bottom: 5px;
+               background-image: url(coffeelogo.jpg);
+               background-repeat: no-repeat;
+               padding-left: 240px;
+              
 
 }
 h1 {font-size: 3em;}
@@ -24,8 +28,13 @@ h2 { color: #8C3826; }
 h4{background-color: #D2B48C;
 font-size: 1.2em;
 padding-left: .5em;
-padding-bottom: .25em;}
-h3 dt{ color: #8C3826;}
+padding-bottom: .25em;
+text-transform: capitalize;
+border-bottom: 1px solid #000000;
+padding-bottom: 0;
+clear: left;
+}
+h3, dt{ color: #8C3826;}
 
 
 nav { font-weight: bold; 
@@ -33,18 +42,34 @@ nav { font-weight: bold;
          font-size: 1.5em;
          padding-top: 5px;
          padding-bottom: 5xp;
+         float: left; 
+         width: 200px;
 }
 nav a{
        text-decoration: none;
 }
 
-main{padding-left: 2em;
+main{padding-left: 0;
 padding-bottom: 2em;
-padding-right: 2em;
-display: block;}
+padding-right: 0;
+display: block;
+margin-left: 200px;
+padding-top: 0;
+background-color: #FEF6C2;
+overflow: auto;
+}
 
-.details{padding-left: 20%;
-padding-right: 20%;}
+main, h2, h3, h4, p, div, ul, dl{
+       padding-left: 3em;
+       padding-right: 2em;
+}
+
+
+.details{
+       padding-left: 20%;
+       padding-right: 20%;
+       overflow: auto;
+}
 
 img{padding-left: 10px;
 padding-right: 10px;
@@ -52,8 +77,9 @@ padding-right: 10px;
 
 #homehero{height: 300px;
 background-image: url(hero.jpg);
-background-size: cover;
-background-repeat: no-repeat;}
+background-size: 100%;
+background-repeat: no-repeat;
+}
 
 footer { background-color: #D2B48C;
          font-size: .60em;
@@ -62,4 +88,52 @@ footer { background-color: #D2B48C;
                padding-bottom: 1em;
                border-top: 2px solid #8C3826;
 }
- 
+
+*{box-sizing: border-box;}
+
+#heromugs{height: 300px;
+       background-image: url(heromugs.jpg);
+       background-size: 100%;
+       background-repeat: no-repeat
+}
+
+#heroguitar{height: 300px;
+       background-image: url(heroguitar.jpg);
+       background-size: 100%;
+       background-repeat: no-repeat
+}
+
+nav a:link{
+       color: #FEF6C2;
+}
+nav a:visited{
+       color: #D2B48C;
+}
+nav a:hover{
+     color:  #CC9933;  
+}
+
+nav ul{
+list-style-type: none;
+padding-left: 0;
+}
+
+.floatleft{
+       float: left;
+       padding-right: 2em;
+       padding-bottom: 2em;
+}
+
+.onethird{
+       float: left;
+       width: 33%;
+}
+
+header a:link, a:visited{
+       text-decoration: none;
+       color: #231814;
+}
+
+header a:hover{
+       color: #FEF6C2;
+}
